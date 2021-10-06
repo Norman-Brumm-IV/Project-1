@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <div id="navbar"></div>
+        <script src="js/navbar.js"></script>
+    </head>
+    <body>
+        <h1>Requests That Need to be Completed</h1>
+        <table id="needscompletiontable" border="2px">
+            <tr>
+                <td>Request ID</td>
+                <td>CID</td>
+                <td>Reason</td>
+                <td>Amount</td>
+            </tr>
+        </table>
+        <br><br>
+        <form id="completeform" class="center">
+            <input type="number" id="id" placeholder="Request ID (Click on a row)" required disabled><br><br>
+            <select id="approved">
+                <option value=true>Approved</option>
+                <option selected value=false>Denied</option>
+            </select><br><br>
+            <input type="text" id="reason" placeholder="Reason" required><br><br>
+            <input type="button" value="Submit" id="logButton">
+        </form>
+    
+        <script src="js/needscompletion.js"></script>
+    </body>
+</html>

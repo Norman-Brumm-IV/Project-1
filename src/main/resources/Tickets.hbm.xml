@@ -1,0 +1,26 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="Tickets" table="tickets">
+
+		<meta attribute="class-description">
+			This class contains all the tickets created
+		</meta>
+
+		<id name="tNumber" type="int" column="TicketNumber">
+			<generator class="native" />
+		</id>
+
+		<property name="cid" column="CID" type="int" />
+		<property name="reason" column="Reason" type="string" />
+		<property name="amount" column="Amount" type="double" />
+		<property name="reviewer" column="Reviewer" type="string" />
+		<property name="approved" column="Approved" type="string" />
+		<property name="adReason" column="ADReason" type="string" />
+
+
+	</class>
+</hibernate-mapping>

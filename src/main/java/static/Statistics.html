@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <div id="navbar"></div>
+        <script src="js/navbar.js"></script>
+    </head>
+    <body>
+        <h1>Statistics</h1>
+        <h2 class="banner">Average Reimbursments Approved</h2>
+        <div>
+            <table id="average"></table>
+        </div>
+        <h2 class="banner">Maximum Reimbursmen Approved</h2>
+        <div>
+            <table border="2px" id="max">
+                <tr class="bolded">
+                    <td>Request ID</td>
+                    <td>CID</td>
+                    <td>Reason</td>
+                    <td>Amount</td>
+                    <td>Status</td>
+                    <td>Approver</td>
+                    <td>Reason for approval</td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="banner">Minimum Reimbursment Approved</h2>
+        <div>
+            <table border="2px" id="min">
+                <tr class="bolded">
+                    <td>Request ID</td>
+                    <td>CID</td>
+                    <td>Reason</td>
+                    <td>Amount</td>
+                    <td>Status</td>
+                    <td>Approver</td>
+                    <td>Reason for approval</td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="banner">Tickets Approved or Denied by Percentage</h2>
+        <div><table id="adp"></table></div>
+        <script src="js/stats.js"></script>
+    </body>
+</html>

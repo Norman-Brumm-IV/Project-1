@@ -1,0 +1,88 @@
+#pagedisplay {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+}
+.headline {
+  font-family: monospace;
+}
+.bolded{
+  font-weight: bold;
+}
+input {
+  width:200px ;
+}
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+h1 {
+  text-align: center;
+  color: black;
+}
+p {
+  color: red;
+}
+
+.center {
+  text-align: center;
+}
+table {
+  border-radius: 20px;
+  border-width: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+table tr {
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  border-radius: 1px 1px 15px 15px;
+  background-color: limegreen;
+}
+
+.banner {
+  border-radius: 10%;
+  background-color: limegreen;
+}
+
+
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  text-align: justify;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Page content */
+.content {
+  padding: 15px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
