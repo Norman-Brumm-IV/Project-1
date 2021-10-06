@@ -34,7 +34,7 @@ Run the server.
 Open MarSaraPortal.HTML
 
 
-image location: 
+image location: https://github.com/Norman-Brumm-IV/Project-1/blob/main/images/MarSaraPortal.png
 
 ## Usage
 Log in with a username and password in the database
